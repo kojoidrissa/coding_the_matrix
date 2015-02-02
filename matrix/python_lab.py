@@ -12,7 +12,7 @@ minutes_in_week = 7 * 24 * 60
 
 
 ## 2: (Task 2) Remainder
-remainder_without_mod = ...
+remainder_without_mod = 37 % 5
 
 
 
