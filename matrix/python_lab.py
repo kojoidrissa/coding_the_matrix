@@ -4,21 +4,15 @@ coursera = 1
 
 
 
-
-
 ## 1: (Task 1) Minutes in a Week
 minutes_in_week = 7 * 24 * 60
 
 
-
 ## 2: (Task 2) Remainder
-remainder_without_mod = 37 % 5
-
-
+remainder_without_mod = 2304811 - (47 * (2304811//47))
 
 ## 3: (Task 3) Divisibility
-divisible_by_3 = ...
-
+divisible_by_3 = (333 % 3) == 0
 
 
 ## 4: (Task 4) Conditional Expression
@@ -29,12 +23,12 @@ expression_val = ...
 
 
 ## 5: (Task 5) Squares Set Comprehension
-first_five_squares = { ... for _ in {1,2,3,4,5} }
+first_five_squares = { x**2 for x in {1,2,3,4,5} }
 
 
 
 ## 6: (Task 6) Powers-of-2 Set Comprehension
-first_five_pows_two = { ... for _ in {0,1,2,3,4} }
+first_five_pows_two = { 2**x for x in {0,1,2,3,4} }
 
 
 
