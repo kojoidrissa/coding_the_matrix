@@ -12,7 +12,7 @@ minutes_in_week = 7 * 24 * 60
 remainder_without_mod = 2304811 - (47 * (2304811//47))
 
 ## 3: (Task 3) Divisibility
-divisible_by_3 = (333 % 3) == 0
+divisible_by_3 = 673 % 3 == 0 and 909 % 3 == 0
 
 
 ## 4: (Task 4) Conditional Expression
