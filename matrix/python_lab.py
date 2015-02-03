@@ -1,7 +1,7 @@
 # version code d345910f07ae
 coursera = 1
 # Please fill out this stencil and submit using the provided submission script.
-
+#http://codingthematrix.com/pythontutor.html
 
 
 ## 1: (Task 1) Minutes in a Week
@@ -18,7 +18,7 @@ divisible_by_3 = 673 % 3 == 0 and 909 % 3 == 0
 ## 4: (Task 4) Conditional Expression
 x = -9
 y = 1/2
-expression_val = ...
+expression_val = 1
 
 
 
