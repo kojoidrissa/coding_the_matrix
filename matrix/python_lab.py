@@ -37,6 +37,7 @@ X1 = { 1,2,3}
 Y1 = { 3,4,5}
 x1y1 = {x*y for x in X1 for y in Y1}
 ###I decreased the overalp in the sets
+###After solving Task 8, I realized it's a matter of common factors
 
 
 
@@ -45,7 +46,7 @@ X2 = {1,2,4}
 Y2 = {8,16,32}
 x2y2 = {x*y for x in X2 for y in Y2}
 ###I used powers of 2 as my set elements. I wonder if this works for other
-###Sets of powers
+###sets of powers
 ###Yes: here's powers of 3
 ###{ 3**x for x in {0,1,2,3,4,5} }
 '''
@@ -59,7 +60,7 @@ x2y2 = {x*y for x in X2 for y in Y2}
 S = {1, 2, 3, 4}
 T = {3, 4, 5, 6}
 # Replace { ... } with a one-line set comprehension that evaluates to the intersection of S and T
-S_intersect_T = { ... }
+S_intersect_T = {x for x in S if x in T}
 
 
 
@@ -68,7 +69,7 @@ list_of_numbers = [20, 10, 15, 75]
 # Replace ... with a one-line expression that evaluates to the average of list_of_numbers.
 # Your expression should refer to the variable list_of_numbers, and should work
 # for a list of any length greater than zero.
-list_average = ... 
+list_average = sum(list_of_numbers) / len(list_of_numbers) 
 
 
 
