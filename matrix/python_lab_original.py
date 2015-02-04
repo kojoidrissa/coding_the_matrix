@@ -1,58 +1,53 @@
-# version code d345910f07ae
+# version code a212a0defa59+
 coursera = 1
 # Please fill out this stencil and submit using the provided submission script.
-#http://codingthematrix.com/pythontutor.html
+
+
+
 
 
 ## 1: (Task 1) Minutes in a Week
-minutes_in_week = 7 * 24 * 60
+minutes_in_week = ...
+
 
 
 ## 2: (Task 2) Remainder
-remainder_without_mod = 2304811 - (47 * (2304811//47))
+remainder_without_mod = ...
+
+
 
 ## 3: (Task 3) Divisibility
-divisible_by_3 = 673 % 3 == 0 and 909 % 3 == 0
+divisible_by_3 = ...
+
 
 
 ## 4: (Task 4) Conditional Expression
 x = -9
 y = 1/2
-expression_val = 1
+expression_val = ...
 
 
 
 ## 5: (Task 5) Squares Set Comprehension
-first_five_squares = { x**2 for x in {1,2,3,4,5} }
+first_five_squares = { ... for _ in {1,2,3,4,5} }
 
 
 
 ## 6: (Task 6) Powers-of-2 Set Comprehension
-first_five_pows_two = { 2**x for x in {0,1,2,3,4} }
+first_five_pows_two = { ... for _ in {0,1,2,3,4} }
 
 
 
 ## 7: (Task 7) Double comprehension evaluating to nine-element set
-X1 = { 1,2,3}
-Y1 = { 3,4,5}
-x1y1 = {x*y for x in X1 for y in Y1}
-###I decreased the overalp in the sets
+X1 = { ..., ..., ... }
+Y1 = { ..., ..., ... }
 
 
 
 ## 8: (Task 8) Double comprehension evaluating to five-element set
-X2 = {1,2,4}
-Y2 = {8,16,32}
-x2y2 = {x*y for x in X2 for y in Y2}
-###I used powers of 2 as my set elements. I wonder if this works for other
-###Sets of powers
-###Yes: here's powers of 3
-###{ 3**x for x in {0,1,2,3,4,5} }
-'''
-X2 = {1, 3, 9}
-Y2 = {27, 81, 243}
-x2y2 = {x*y for x in X2 for y in Y2}
-'''
+X2 = { ..., ..., ... }
+Y2 = { ..., ..., ... }
+
 
 
 ## 9: (Task 9) Set intersection as a comprehension
@@ -73,7 +68,7 @@ list_average = ...
 
 
 ## 11: (Task 11) Cartesian-product comprehension
-# Replace ... with a double list comprehension over {'A','B','C'} and {1,2,3}
+# Replace ... with a double list comprehension over ['A','B','C'] and [1,2,3]
 cartesian_product = ...
 
 
@@ -173,8 +168,8 @@ identity_dict = {...}
 base = 10
 digits = set(range(base))
 # Replace { ... } with a one-line dictionary comprehension
-# Your comprehension should use the variable 'base' so it will work if a different number
-# is assigned to this variable.
+# Your comprehension should use the variables 'base' and 'digits' so it will work correctly if these
+# are assigned different values (e.g. base = 2 and digits = {0,1})
 representation_dict = { ... }
 
 
