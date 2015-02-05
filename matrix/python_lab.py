@@ -116,7 +116,8 @@ first_of_tuples_list = [(x,y,z) for x in S for y in S for z in S if sum((x,y,z))
 
 ## 16: (Task 16) List and set differ
 # Assign to example_L a list such that len(example_L) != len(list(set(example_L)))
-example_L = [...]
+example_L = [1,1,2]
+###any list with a repeated element
 
 
 
