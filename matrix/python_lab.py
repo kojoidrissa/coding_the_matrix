@@ -36,8 +36,9 @@ first_five_pows_two = { 2**x for x in {0,1,2,3,4} }
 X1 = { 1,2,3}
 Y1 = { 3,4,5}
 x1y1 = {x*y for x in X1 for y in Y1}
-###I decreased the overalp in the sets
+###I decreased the overlap in the sets
 ###After solving Task 8, I realized it's a matter of common factors
+###not overlap
 
 
 
@@ -75,7 +76,7 @@ list_average = sum(list_of_numbers) / len(list_of_numbers)
 
 ## 11: (Task 11) Cartesian-product comprehension
 # Replace ... with a double list comprehension over {'A','B','C'} and {1,2,3}
-cartesian_product = ...
+cartesian_product = [[x,y] for x in {'A','B','C'} for y in {1,2,3}]
 
 
 
@@ -83,28 +84,33 @@ cartesian_product = ...
 LofL = [[.25, .75, .1], [-1, 0], [4, 4, 4, 4]]
 # Replace ... with a one-line expression of the form sum([sum(...) ... ]) that
 # includes a comprehension and evaluates to the sum of all numbers in all the lists.
-LofL_sum = ...
+LofL_sum = sum([sum(x) for x in LofL])
+###Use the list comprehension to create a list of the sums of the sub-lists,
+###then sum that list
 
 
 
 ## 13: (Task 13) Three-element tuples summing to zero
 S = {-4, -2, 1, 2, 5, 0}
 # Replace [ ... ] with a one-line list comprehension in which S appears
-zero_sum_list = [ ... ] 
-
+zero_sum_list = [(x,y,z) for x in S for y in S for z in S if x+y+z == 0]
+'''This also works and seems a BIT more elegant
+zsl = [(x,y,z) for x in S for y in S for z in S if sum((x,y,z)) == 0]
+I realized I could give the tuple being formed TO the sum function,
+as it takes an iterable
+'''
 
 
 ## 14: (Task 14) Nontrivial three-element tuples summing to zero
 S = {-4, -2, 1, 2, 5, 0}
 # Replace [ ... ] with a one-line list comprehension in which S appears
-exclude_zero_list = [ ... ]
-
+exclude_zero_list = [(x,y,z) for x in S for y in S for z in S if sum((x,y,z)) == 0 and (x,y,z) != (0,0,0)]
 
 
 ## 15: (Task 15) One nontrivial three-element tuple summing to zero
 S = {-4, -2, 1, 2, 5, 0}
 # Replace ... with a one-line expression that uses a list comprehension in which S appears
-first_of_tuples_list = ...
+first_of_tuples_list = [(x,y,z) for x in S for y in S for z in S if sum((x,y,z)) == 0 and (x,y,z) != (0,0,0)][0]
 
 
 
