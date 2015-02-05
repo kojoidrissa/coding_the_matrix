@@ -131,7 +131,8 @@ odd_num_list_range = {i for i in range(1,100,2)}
 # In the line below, replace ... with an expression that does not include a comprehension.
 # Instead, it should use zip and range.
 # Note: zip() does not return a list. It returns an 'iterator of tuples'
-range_and_zip = ...
+L = ['A','B','C','D','E']
+range_and_zip = list(zip(range(0,5), L))
 
 
 
