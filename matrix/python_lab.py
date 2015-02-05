@@ -123,8 +123,8 @@ example_L = [1,1,2]
 
 ## 17: (Task 17) Odd numbers
 # Replace {...} with a one-line set comprehension over a range of the form range(n)
-odd_num_list_range = {...}
-
+odd_num_list_range = {i for i in range(1,100,2)}
+###start range at 1, step of 2
 
 
 ## 18: (Task 18) Using range and zip

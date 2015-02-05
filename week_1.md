@@ -19,3 +19,6 @@
     +  collection of problems
 -  Labs
     +  like homework, but all focused towards on goal
+
+##General Notes
+-  I need to dig deeper into Iterators and Generators.
