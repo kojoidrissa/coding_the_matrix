@@ -172,7 +172,7 @@ value_list_modified_2 = [x.get(k, 'NOT PRESENT') for x in dlist] # <-- as you do
 
 ## 22: (Task 22) A dictionary mapping integers to their squares
 # Replace {...} with a one-line dictionary comprehension
-square_dict = {...}
+square_dict = {k:k**2 for k in range(100)}
 
 
 
