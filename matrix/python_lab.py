@@ -155,7 +155,8 @@ dlist = [{'James':'Sean', 'director':'Terence'}, {'James':'Roger', 'director':'L
 k = 'James'
 # Replace [...] with a one-line comprehension that uses dlist and k
 # and that evaluates to ['Sean','Roger','Pierce']
-value_list = [...]
+value_list = [bond[k] for bond in dlist]
+###get the value for each occurance of key 'k' in a list of dictionaries
 
 
 
