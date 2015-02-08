@@ -133,6 +133,8 @@ odd_num_list_range = {i for i in range(1,100,2)}
 # Note: zip() does not return a list. It returns an 'iterator of tuples'
 L = ['A','B','C','D','E']
 range_and_zip = list(zip(range(0,5), L))
+###Use `list()` to transform the output of the zip(an interable) into a list
+###w/o using a list comprehension
 
 
 
@@ -142,7 +144,9 @@ B = [1, 15, 20]
 # Replace [...] with a one-line comprehension that uses zip together with the variables A and B.
 # The comprehension should evaluate to a list whose ith element is the ith element of
 # A plus the ith element of B.
-list_sum_zip = [...]
+list_sum_zip = [x+y for x, y in zip(A, B)]
+###List comprehension turns output of zip(an iterable; Need to study this more)
+###into a list
 
 
 
