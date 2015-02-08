@@ -164,9 +164,9 @@ value_list = [bond[k] for bond in dlist]
 dlist = [{'Bilbo':'Ian','Frodo':'Elijah'},{'Bilbo':'Martin','Thorin':'Richard'}]
 k = 'Bilbo'
 #Replace [...] with a one-line comprehension 
-value_list_modified_1 = [...] # <-- Use the same expression here
+value_list_modified_1 = [x.get(k, 'NOT PRESENT') for x in dlist] # <-- Use the same expression here
 k = 'Frodo'
-value_list_modified_2 = [...] # <-- as you do here
+value_list_modified_2 = [x.get(k, 'NOT PRESENT') for x in dlist] # <-- as you do here
 
 
 
