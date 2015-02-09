@@ -173,13 +173,13 @@ value_list_modified_2 = [x.get(k, 'NOT PRESENT') for x in dlist] # <-- as you do
 ## 22: (Task 22) A dictionary mapping integers to their squares
 # Replace {...} with a one-line dictionary comprehension
 square_dict = {k:k**2 for k in range(100)}
-
+###Remeber: if you want a range of x continuous elements, `range(x)` works
 
 
 ## 23: (Task 23) Making the identity function
 D = {'red','white','blue'}
 # Replace {...} with a one-line dictionary comprehension
-identity_dict = {...}
+identity_dict = {key:key for key in D}
 
 
 
