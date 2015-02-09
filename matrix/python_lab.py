@@ -189,7 +189,7 @@ digits = set(range(base))
 # Replace { ... } with a one-line dictionary comprehension
 # Your comprehension should use the variable 'base' so it will work if a different number
 # is assigned to this variable.
-representation_dict = { ... }
+representation_dict = {d:(d//base**2, d%base**2//base**1, d%base**1) for d in range(base**3)}
 
 
 
