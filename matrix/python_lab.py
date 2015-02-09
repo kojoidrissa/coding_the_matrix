@@ -180,6 +180,7 @@ square_dict = {k:k**2 for k in range(100)}
 D = {'red','white','blue'}
 # Replace {...} with a one-line dictionary comprehension
 identity_dict = {key:key for key in D}
+###Identity function: f(x) = x; https://en.wikipedia.org/wiki/Identity_function
 
 
 
@@ -190,7 +191,8 @@ digits = set(range(base))
 # Your comprehension should use the variable 'base' so it will work if a different number
 # is assigned to this variable.
 representation_dict = {d:(d//base**2, d%base**2//base**1, d%base**1) for d in range(base**3)}
-
+###To get full range of 3-digit numbers, you need `base**3`
+###The rest is similar to my Version Number function
 
 
 ## 25: (Task 25) A dictionary mapping names to salaries
