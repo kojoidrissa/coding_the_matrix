@@ -232,5 +232,6 @@ def dict2list(dct, keylist): return [dct[key] for key in keylist]
 # Output: the dictionary that maps keylist[i] to L[i] for i=0,1,...len(L)-1
 # Example: list2dict(['A','B','C'],['a','b','c']) should equal {'a':'A', 'b':'B', 'c':'C'}
 # Complete the procedure definition by replacing { ... } with a one-line dictionary comprehension
-def list2dict(L, keylist): return { ... }
+def list2dict(L, keylist): return { k:v for (k,v) in zip(keylist, L)}
+###zip L & keylist then run a dictionary comprehension over the zip
 
