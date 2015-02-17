@@ -200,7 +200,7 @@ id2salary = {0:1000.0, 1:1200.50, 2:990}
 names = ['Larry', 'Curly', 'Moe']
 # Replace { ... } with a one-line dictionary comprehension that uses id2salary and names.
 listdict2dict = {k:id2salary[names.index(k)] for k in names if names.index(k) in id2salary.keys()}
-##test = {k:id2salary[names.index(k)] for k in names}
+###test = {k:id2salary[names.index(k)] for k in names}
 '''Iterate through the LIST to get the keys, use the list indexes to DIRECTLY
 access the DICTIONARY values. The `test` code tries that without worrying
 about the "not every employee ID is represented in id2salary." condition
@@ -208,14 +208,14 @@ about the "not every employee ID is represented in id2salary." condition
 
 ## 26: (Task 26) Procedure nextInts
 # Complete the procedure definition by replacing [ ... ] with a one-line list comprehension
-def nextInts(L): return [ ... ]
-
+def nextInts(L): return [x+1 for x in L]
+###Standard list comprehension
 
 
 ## 27: (Task 27) Procedure cubes
 # Complete the procedure definition by replacing [ ... ] with a one-line list comprehension
-def cubes(L): return [ ... ] 
-
+def cubes(L): return [i**3 for i in L] 
+###Standard list comprehension
 
 
 ## 28: (Task 28) Procedure dict2list
@@ -223,8 +223,8 @@ def cubes(L): return [ ... ]
 # Output: the list L such that L[i] is the value associated in dct with keylist[i]
 # Example: dict2list({'a':'A', 'b':'B', 'c':'C'},['b','c','a']) should equal ['B','C','A']
 # Complete the procedure definition by replacing [ ... ] with a one-line list comprehension
-def dict2list(dct, keylist): return [ ... ]
-
+def dict2list(dct, keylist): return [dct[key] for key in keylist]
+###Iterate through keylist, use those keys to return value from dct
 
 
 ## 29: (Task 29) Procedure list2dict
