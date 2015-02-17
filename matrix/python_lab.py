@@ -199,9 +199,12 @@ representation_dict = {d:(d//base**2, d%base**2//base**1, d%base**1) for d in ra
 id2salary = {0:1000.0, 1:1200.50, 2:990}
 names = ['Larry', 'Curly', 'Moe']
 # Replace { ... } with a one-line dictionary comprehension that uses id2salary and names.
-listdict2dict = { ... }
-
-
+listdict2dict = {k:id2salary[names.index(k)] for k in names if names.index(k) in id2salary.keys()}
+##test = {k:id2salary[names.index(k)] for k in names}
+'''Iterate through the LIST to get the keys, use the list indexes to DIRECTLY
+access the DICTIONARY values. The `test` code tries that without worrying
+about the "not every employee ID is represented in id2salary." condition
+'''
 
 ## 26: (Task 26) Procedure nextInts
 # Complete the procedure definition by replacing [ ... ] with a one-line list comprehension
